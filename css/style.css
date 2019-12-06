@@ -53,10 +53,11 @@ body {
   position: relative;
   float: left;
   width: 14.28%;
-  height: 30px;
   /* outline: 1px solid red; */
   line-height: 30px;
+  z-index: 999;
 }
+
 #main_gnb > .depth1 > li > a {
   display: block;
   font-size: 1.2em;
@@ -79,6 +80,9 @@ body {
 }
 
 #main_gnb .depth2{
+  position: absolute;
+  left: 0;
+  width: 100%;
   height: 0;
   overflow: hidden;
   transition-duration: 0.4s;
@@ -99,11 +103,13 @@ body {
   /* 가변이미지범위: 1200px ~ 1920(HD) */
   min-width: 1200px;
   max-width: 1920px;
+  /* border: 2px solid red; */
   margin: 0 auto;
   overflow: hidden;
   /* background: #ccc; */
   margin-bottom: 80px;
 }
+
 #main_banner .slider img { width: 100%;}
 
 /* 뉴스 섹션 */
